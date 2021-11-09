@@ -18,10 +18,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CodeLabTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
+                MyApp()
             }
         }
     }
@@ -37,10 +34,17 @@ fun Greeting(name: String) {
     }
 }
 
+@Composable
+private fun MyApp() {
+    Surface(color = MaterialTheme.colors.background) {
+        Greeting(name = "Android")
+    }
+}
+
 @Preview(showBackground = true, name = "Text preview")
 @Composable
 fun DefaultPreview() {
     CodeLabTheme {
-        Greeting("World!")
+        MyApp()
     }
 }
