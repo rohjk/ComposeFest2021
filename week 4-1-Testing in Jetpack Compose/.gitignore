@@ -1,0 +1,17 @@
+.project
+.DS_Store
+bin/
+gen/
+crashlytics-build.properties
+libs/crashlytics.jar
+com_crashlytics_export_strings.xml
+build/
+.gradle
+.idea
+*.iml
+local.properties
+captures/
+*.apk
+*.hprof
+fastlane/README.md
+fastlane/report.xml
